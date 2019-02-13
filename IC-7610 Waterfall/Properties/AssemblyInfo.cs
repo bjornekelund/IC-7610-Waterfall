@@ -10,9 +10,9 @@ using System.Windows;
 [assembly: AssemblyTitle("IC-7610 Waterfall")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("HP Inc.")]
+[assembly: AssemblyCompany("SM7IUN")]
 [assembly: AssemblyProduct("IC-7610 Waterfall")]
-[assembly: AssemblyCopyright("Copyright © HP Inc. 2018")]
+[assembly: AssemblyCopyright("Copyright © Björn Ekelund SM7IUN 2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
