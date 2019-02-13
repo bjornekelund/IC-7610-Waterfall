@@ -1,0 +1,31 @@
+﻿<Window x:Class="IC_7610_Waterfall.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:IC_7610_Waterfall"
+        mc:Ignorable="d"
+        Title="IC-7610 Waterfall" Height="105" Width="380.667" ResizeMode="CanMinimize">
+    <Grid Margin="0,0,4,3">
+        <Button x:Name="ModeButton" Content="Mode" HorizontalAlignment="Left" Margin="10,11,0,0" VerticalAlignment="Top" Width="75" Click="ModeClick" Height="22" TabIndex="-1" IsTabStop="False"/>
+        <Button x:Name="Pile_upButton" Content="Pile-up" HorizontalAlignment="Left" Margin="10,45,0,0" VerticalAlignment="Top" Width="75" Click="PileupClick" Height="22" TabIndex="-1" IsTabStop="False"/>
+        <GroupBox Header="Mode" HorizontalAlignment="Left" Height="33" Margin="100,35,0,0" VerticalAlignment="Top" Width="66" FontSize="9" ScrollViewer.VerticalScrollBarVisibility="Disabled">
+            <Label x:Name="DisplayMode" Content="Mode" HorizontalAlignment="Left" Height="18" Margin="1,-1,-1,-2" VerticalAlignment="Top" FontSize="11" Padding="1,1,1,3" Width="54" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Foreground="{DynamicResource {x:Static SystemColors.ControlDarkDarkBrushKey}}"/>
+        </GroupBox>
+        <TextBox x:Name="WaterfallOffset" HorizontalAlignment="Left" Height="22" Margin="321,46,0,0" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Width="35" TextAlignment="Right" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" VerticalScrollBarVisibility="Disabled" TabIndex="2" KeyDown="EntryKeyDown"/>
+        <GroupBox Header="Waterfall" HorizontalAlignment="Left" Height="35" Margin="225,-1,0,0" VerticalAlignment="Top" Width="133" FontSize="9">
+            <Label x:Name="DisplayWaterfallEdges" Content="-- --- - -- ---kHz" HorizontalAlignment="Center" Height="18" Margin="4,0,1,-3" VerticalAlignment="Center" Width="108" Padding="1" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="12"/>
+        </GroupBox>
+        <GroupBox Header="Main VFO" HorizontalAlignment="Left" Height="35" Margin="100,-1,0,0" VerticalAlignment="Top" Width="117" FontSize="9">
+            <Label x:Name="DisplayDxQRG" Content="-- ---kHz" Padding="1" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Margin="2,-1,0,-2" FontSize="12" Foreground="{DynamicResource {x:Static SystemColors.ControlDarkDarkBrushKey}}"/>
+        </GroupBox>
+        <TextBox x:Name="WaterfallWidth" HorizontalAlignment="Left" Height="22" Margin="229,46,0,0" TextWrapping="Wrap" Text="5" VerticalAlignment="Top" Width="35" TextAlignment="Right" VerticalScrollBarVisibility="Disabled" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" TabIndex="1" KeyDown="EntryKeyDown"/>
+        <Label Content="Width:" HorizontalAlignment="Left" Margin="187,46,0,0" VerticalAlignment="Top" Padding="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" ScrollViewer.VerticalScrollBarVisibility="Disabled" Height="22" RenderTransformOrigin="0.73,0.515">
+            <Label.Background>
+                <ImageBrush/>
+            </Label.Background>
+        </Label>
+        <Label Content="Offset:" HorizontalAlignment="Left" Height="22" Margin="279,46,0,0" VerticalAlignment="Top" Padding="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" ScrollViewer.VerticalScrollBarVisibility="Disabled"/>
+
+    </Grid>
+</Window>
